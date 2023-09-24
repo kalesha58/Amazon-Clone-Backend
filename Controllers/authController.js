@@ -89,6 +89,7 @@ export const registerController = async (req, res) => {
         res.status(201).json({
             message:
                 "Registration successful. Please check your email for verification.",
+                Success:true
         });
     } catch (error) {
         console.log("Error during registration:", error); // Debugging statement
